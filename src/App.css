@@ -1,38 +1,270 @@
-.App {
+.btnSearch {
+  background: #006dff;
+  color: #000;
+}
+
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  text-decoration: none !important;
+}
+.SearchBar {
+  /* margin-right: 21rem;
+  margin-left: -50px;
+  margin-top: 20px;
+  margin-bottom: 20px; */
+  margin: 20px 21rem 20px -15px;
+}
+.movies {
+  cursor: pointer;
+}
+.movies .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.iconFavorite {
+  background: #fff;
+  padding: 11px;
+  border-radius: 50px;
+  font-size: 15px;
+  position: absolute;
+  right: 6px;
+  top: 13px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.iconFavorite:hover {
+  background-color: #fdfd83;
+  color: #ff0000;
+}
+
+.vote {
+  background: #fff704;
+  padding: 8px 9px;
+  color: #000000;
+  border-radius: 50px;
+  font-size: 16px;
+  position: absolute;
+  left: 6px;
+  top: 13px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 700;
+}
+
+.card-overlay img {
+  padding: 2px;
+}
+
+.movieDetails {
+  position: relative;
+  overflow: hidden;
+  margin: 2pc 0;
+}
+
+.movieDetails::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.movieDetails img,
+.movieDetails .card-body,
+.detail {
+  position: relative;
+  z-index: 2;
+}
+.detail h1 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.iconFavoriteDetail {
+  background: #fff;
+  padding: 11px;
+  border-radius: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.iconFavoriteDetail:hover {
+  background-color: #fdfd83;
+  color: #ff0000;
+}
+.load {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+.load div {
+  width: 20px;
+  height: 20px;
+  background-color: aqua;
+  border-radius: 50%;
+  margin: 0 5px;
+  animation-name: khaled;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.load .two {
+  animation-delay: 0.3s;
+}
+.load .three {
+  animation-delay: 0.6s;
+}
+@keyframes khaled {
+  to {
+    opacity: 0.2;
+    transform: translatey(-20px);
+  }
+}
+.voteDetail {
+  background: #fff704;
+  padding: 8px 9px;
+  color: #000000;
+  border-radius: 50px;
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 700;
+  margin-right: 15px;
+  margin-left: 56px;
+}
+.iconsDetail span {
+  font-size: larger;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 16px;
+}
+.language {
+  color: #fff;
+  font-size: larger;
+  font-weight: 600;
+}
+.language span {
+  margin-left: 15px;
+  background-color: #fff704;
+  padding: 7px 9px;
+  color: #000;
+  border-radius: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Overview h3 {
+  font-size: 29px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.Overview p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+.btns button {
+  margin: 50px 15px;
+  padding: 12px 25px;
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.btnRegister {
   align-items: center;
+  background-color: #06f;
+  border: 2px solid #06f;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  letter-spacing: -0.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.App-link {
-  color: #61dafb;
+.btnRegister:focus {
+  color: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btnRegister:hover {
+  background-color: #3385ff;
+  border-color: #3385ff;
+  fill: #06f;
+}
+
+.btnRegister:active {
+  background-color: #3385ff;
+  border-color: #3385ff;
+  fill: #06f;
+}
+.iconFavoriteNumbers {
+  margin-left: 34px;
+  margin-right: 5px;
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+}
+
+.searchbar {
+  width: 100%;
+  background: #e8e8e8;
+  height: 250px;
+  position: absolute;
+  z-index: 11;
+  top: 65px;
+  right: 0;
+  border-radius: 20px;
+  overflow-y: scroll;
+  display: none;
+}
+.SearchBar:focus + .searchbar {
+  display: inline-block;
+}
+.searchbar .imgSearch {
+  width: 78px;
+}
+.titleSearch {
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .btnRegister {
+    min-width: 170px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 991.2px) {
+  .SearchBar {
+    margin-left: 0px;
   }
+}
+.hiUser {
+  margin-left: 12px !important;
 }
